@@ -1,0 +1,67 @@
+body {
+  background: linear-gradient(to right, #fad39d, #cc995a);
+  font-size: 20px;
+  font-family: Papyrus, sans-serif;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div {
+  /* margin: 10px 5px 10px 5px; */
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 20.2px;
+}
+
+button {
+  background-color: wheat;
+  border: none;
+  font-size: 16px;
+  user-select: none;
+  margin: 0 5px;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#pyramid-click {
+  height: 250px;
+  width: 250px;
+  cursor: pointer;
+}
+
+#sell {
+  color: crimson;
+  margin-left: 5px;
+}
+
+#cash-purchase {
+  display: flex;
+  align-items: center;
+}
+
+#cash {
+  display: inline;
+}
+
+#purchase {
+  display: inline;
+}
+
+.production {
+  background-color: sandybrown;
+  border-radius: 8px;
+  padding: 3px 3px;
+  font-weight: bold;
+  font-size: 18px;
+}
