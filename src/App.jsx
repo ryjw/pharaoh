@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import Clicker from "./components/clicker";
+import Clicker from "./components/Clicker";
 import { producerArray } from "./lib/lib.jsx";
-import GrainDisplay from "./components/grain_display";
-import SellButton from "./components/sell_button";
-import DebenDisplay from "./components/deben_display";
+import GrainDisplay from "./components/GrainDisplay";
+import SellButton from "./components/SellButton";
+import DebenDisplay from "./components/DebenDisplay";
 import BuyButton from "./components/BuyButton";
-import DisplayOutput from "./components/outputdisplay";
+import DisplayOutput from "./components/OutputDisplay";
 
 function App() {
   const [producers, setProducers] = useState(producerArray);
