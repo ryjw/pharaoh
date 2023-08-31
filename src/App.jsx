@@ -4,7 +4,7 @@ import { producerArray } from "./lib/lib.jsx";
 import GrainDisplay from "./components/grain_display";
 import SellButton from "./components/sell_button";
 import DebenDisplay from "./components/deben_display";
-import BuyButton from "./components/buy_buttons";
+import BuyButton from "./components/BuyButton";
 import DisplayOutput from "./components/outputdisplay";
 
 function App() {
