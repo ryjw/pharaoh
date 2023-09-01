@@ -45,71 +45,19 @@ function App() {
       </div>
       <div className="flex">
         <DebenDisplay debensGetter={debens} />
-        <BuyButton
-          id={0}
-          debens={debens}
-          setDebens={setDebens}
-          producers={producers}
-          setProducers={setProducers}
-        />
-        <BuyButton
-          id={1}
-          debens={debens}
-          setDebens={setDebens}
-          producers={producers}
-          setProducers={setProducers}
-        />
-        <BuyButton
-          id={2}
-          debens={debens}
-          setDebens={setDebens}
-          producers={producers}
-          setProducers={setProducers}
-        />
-        <BuyButton
-          id={3}
-          debens={debens}
-          setDebens={setDebens}
-          producers={producers}
-          setProducers={setProducers}
-        />
-        <BuyButton
-          id={4}
-          debens={debens}
-          setDebens={setDebens}
-          producers={producers}
-          setProducers={setProducers}
-        />
-        <BuyButton
-          id={5}
-          debens={debens}
-          setDebens={setDebens}
-          producers={producers}
-          setProducers={setProducers}
-        />
-        <BuyButton
-          id={6}
-          debens={debens}
-          setDebens={setDebens}
-          producers={producers}
-          setProducers={setProducers}
-        />
-        <BuyButton
-          id={7}
-          debens={debens}
-          setDebens={setDebens}
-          producers={producers}
-          setProducers={setProducers}
-        />
+        {producers.map((producer) => {
+          <BuyButton
+            id={producer.id}
+            debens={debens}
+            setDebens={setDebens}
+            producers={producers}
+            setProducers={setProducers}
+          />;
+        })}
       </div>
-      <DisplayOutput id={0} producers={producers} />
-      <DisplayOutput id={1} producers={producers} />
-      <DisplayOutput id={2} producers={producers} />
-      <DisplayOutput id={3} producers={producers} />
-      <DisplayOutput id={4} producers={producers} />
-      <DisplayOutput id={5} producers={producers} />
-      <DisplayOutput id={6} producers={producers} />
-      <DisplayOutput id={7} producers={producers} />
+      {producers.map((producer) => {
+        <DisplayOutput id={producer.id} producers={producers} />;
+      })}
     </>
   );
 }
