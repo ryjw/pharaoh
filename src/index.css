@@ -9,10 +9,6 @@ body {
   flex-wrap: wrap;
 }
 
-div {
-  /* margin: 10px 5px 10px 5px; */
-}
-
 h1 {
   font-size: 60px;
   margin-bottom: 20.2px;
@@ -34,10 +30,15 @@ button {
   visibility: hidden;
 }
 
-#pyramid-click {
+.pyramid-click {
   height: 250px;
   width: 250px;
   cursor: pointer;
+  transition: transform 0.05s ease;
+}
+
+.pyramid-click.shrunk {
+  transform: scale(0.95);
 }
 
 #sell {

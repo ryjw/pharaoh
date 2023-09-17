@@ -46,17 +46,18 @@ function App() {
       <div className="flex">
         <DebenDisplay debensGetter={debens} />
         {producers.map((producer) => {
-          <BuyButton
-            id={producer.id}
-            debens={debens}
-            setDebens={setDebens}
-            producers={producers}
-            setProducers={setProducers}
-          />;
+          return (
+            <BuyButton
+              debens={debens}
+              setDebens={setDebens}
+              producer={producer}
+              setProducers={setProducers}
+            />
+          );
         })}
       </div>
       {producers.map((producer) => {
-        <DisplayOutput id={producer.id} producers={producers} />;
+        return <DisplayOutput id={producer.id} producers={producers} />;
       })}
     </>
   );

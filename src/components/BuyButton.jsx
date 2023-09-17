@@ -1,20 +1,18 @@
 export default function BuyButton({
-  id,
-  producers,
+  producer,
   setProducers,
   debens,
   setDebens,
 }) {
-  const producer = producers.filter((producer) => producer.id === id)[0];
   function buy() {
     setDebens(() => debens - producer.cost);
     setProducers((prevProducers) => {
-      return prevProducers.map((producer) => {
-        if (producer.id === id) {
-          const owned = producer.owned;
-          return { ...producer, owned: owned + 1 };
+      return prevProducers.map((prod) => {
+        if (producer.id === prod.id) {
+          const owned = prod.owned;
+          return { ...prod, owned: owned + 1 };
         } else {
-          return producer;
+          return prod;
         }
       });
     });
